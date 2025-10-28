@@ -8,8 +8,8 @@ app.use(express.json());
 app.use("/reservations", reservationRoutes);
 
 // Health Check
-app.get("/", (req, res) => res.send("🎟️ TicketBoss API Running!"));
+app.get("/", (req, res) => res.send("TicketBoss API Running!"));
 
 // Start Server
 const PORT = process.env.PORT || 3000;
-app.listen(PORT, () => console.log(`🚀 Server running on port ${PORT}`));
+app.listen(PORT, () => console.log(` Server running on port ${PORT}`));
